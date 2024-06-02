@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: 'Clash Display', sans-serif;
+}
+
+body,html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  max-width: 1200px;
+}
+
+.heading::after {
+  content: "";
+  position: absolute;
+  height: 200px;
+  width: 240px;
+  top: 16%;
+  left: 20%;
+  border-radius: 50%;
+  background: linear-gradient(to bottom, #f62f2f, #f5af53);
+  filter: blur(30px);
+  z-index: -2;
+}
+
+@media screen and (max-width:768px) {
+  .heading::after {
+    height: 100px;
+    width: 120px;
+    top: 10%;
+    left: 35%;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1025px) {
+  .heading::after {
+    height: 130px;
+    width: 150px;
+    top: 14%;
+    left: 35%;
+  }
+}
