@@ -11,14 +11,14 @@ const Customize = () => {
       <div className="flex flex-col lg:flex-row justify-between items-center">
         <div className="max-w-[518px] order-1 md:order-none">
           {currentTheme === "light" ? (
-            <img className="w-full" src={customize} alt="" />
+            <img loading="lazy" className="w-full" src={customize} alt="" />
           ) : (
-            <img className="w-full" src={customizeDark} alt="" />
+            <img loading="lazy" className="w-full" src={customizeDark} alt="" />
           )}
         </div>
         <div className="order-2 md:order-none">
           <div className="flex items-center gap-4 sm:text-2xl text-lg font-medium sm:mb-6 mb-3">
-            <img className="sm:w-10 w-7" src={customizeIcon} alt="" />
+            <img loading="lazy" className="sm:w-10 w-7" src={customizeIcon} alt="" />
             <p>Clever Notification</p>
           </div>
           <p className="sm:text-base text-sm lg:max-w-[535px] w-full">

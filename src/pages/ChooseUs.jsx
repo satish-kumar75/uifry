@@ -18,7 +18,7 @@ const ChooseUs = () => {
             Why Choose Uifry?
           </h2>
           <div className="flex items-center gap-4 sm:text-2xl text-lg font-medium sm:mb-6 mb-3">
-            <img className="sm:w-10 w-7" src={bell} alt="" />
+            <img loading="lazy" className="sm:w-10 w-7" src={bell} alt="" />
             <p>Clever Notification</p>
           </div>
           <p className="sm:text-base text-sm lg:max-w-[535px] w-full">
@@ -31,9 +31,9 @@ const ChooseUs = () => {
         </div>
         <div className="max-w-[518px] md:order-none order-1">
           {currentTheme === "light" ? (
-            <img className="w-full" src={choose} alt="" />
+            <img loading="lazy" className="w-full" src={choose} alt="" />
           ) : (
-            <img className="w-full" src={chooseDark} alt="" />
+            <img loading="lazy" className="w-full" src={chooseDark} alt="" />
           )}
         </div>
       </div>

@@ -16,9 +16,9 @@ const Testimonials = () => {
       <div className="flex flex-col lg:flex-row justify-between items-center">
         <div className="max-w-[518px]">
           {currentTheme === "light" ? (
-            <img className="w-full" src={testimonial} alt="" />
+            <img loading="lazy" className="w-full" src={testimonial} alt="" />
           ) : (
-            <img className="w-full" src={testimonialDark} alt="" />
+            <img loading="lazy" className="w-full" src={testimonialDark} alt="" />
           )}
         </div>
         <div className="flex flex-col gap-5 items-start">
@@ -34,7 +34,7 @@ const Testimonials = () => {
           </p>
           <div className="mx-auto md:mx-0 flex flex-col gap-3 items-center sm:items-start">
             <p className="text">Rownok Mahbub</p>
-            <img className="h-10" src={person} alt="" />
+            <img loading="lazy" className="h-10" src={person} alt="" />
           </div>
         </div>
       </div>

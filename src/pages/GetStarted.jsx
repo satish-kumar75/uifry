@@ -13,7 +13,7 @@ const GetStarted = () => {
         fill={currentTheme === "light" ? "black" : "white"}
         className="w-10 sm:w-fit absolute xl:-right-32 lg:-top-32 md:-top-24 -top-16 right-0"
       />
-      <img
+      <img loading="lazy"
         className="absolute -top-44 -left-56 z-0 mix-blend-multiply"
         src={bglinear}
         alt=""
@@ -32,9 +32,9 @@ const GetStarted = () => {
             <AiFillApple className="sm:text-xl text-base" />
           </button>
         </div>
-        <img className="relative z-10" src={getstarted} alt="" />
+        <img loading="lazy" className="relative z-10" src={getstarted} alt="" />
       </div>
-      <img className="absolute bottom-0 left-0" src={circle} alt="" />
+      <img loading="lazy" className="absolute bottom-0 left-0" src={circle} alt="" />
     </div>
   );
 };

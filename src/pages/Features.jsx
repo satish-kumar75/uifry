@@ -11,13 +11,13 @@ const Features = () => {
   const { currentTheme } = useContext(ThemeContext);
   return (
     <div className="container mx-auto px-5 xl:px-0 relative " id="features">
-    <img className="absolute -right-0 xl:-right-[2.66vw] 2xl:-right-[10.4vw] lg:top-20 top-[70%] mix-blend-normal" src={bglinear2} alt="" />
+    <img loading="lazy" className="absolute -right-0 xl:-right-[2.66vw] 2xl:-right-[10.4vw] lg:top-20 top-[70%] mix-blend-normal" src={bglinear2} alt="" />
       <div className="flex flex-col lg:flex-row justify-between items-center">
         <div className="lg:w-full max-w-[512px]">
           {currentTheme === "light" ? (
-            <img className="w-full object-cover" src={subhero} alt="" />
+            <img loading="lazy" className="w-full object-cover" src={subhero} alt="" />
           ) : (
-            <img className="w-full object-cover" src={subheroDark} alt="" />
+            <img loading="lazy" className="w-full object-cover" src={subheroDark} alt="" />
           )}
         </div>
 
@@ -30,7 +30,7 @@ const Features = () => {
           </p>
           <div className="flex flex-col gap-2">
             <div className="flex items-center gap-3">
-              <img src={budget} alt="" />
+              <img loading="lazy" src={budget} alt="" />
               <p className="md:text-2xl text-xl font-semibold">
                 Budgeting Intervals
               </p>
@@ -43,7 +43,7 @@ const Features = () => {
           </div>
           <div className="flex flex-col gap-2">
             <div className="flex items-center gap-3">
-              <img src={b2} alt="" />
+              <img loading="lazy" src={b2} alt="" />
               <p className="md:text-2xl text-xl font-semibold">
                 Budgeting Intervals
               </p>
@@ -56,7 +56,7 @@ const Features = () => {
           </div>
           <div className="flex flex-col gap-2">
             <div className="flex items-center gap-3">
-              <img src={b3} alt="" />
+              <img loading="lazy" src={b3} alt="" />
               <p className="md:text-2xl text-xl font-semibold">
                 Budgeting Intervals
               </p>

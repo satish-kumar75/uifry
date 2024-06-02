@@ -39,18 +39,18 @@ const Hero = () => {
           </div>
           <div className="md:w-[30rem] w-full lg:mx-0 mx-auto">
             {currentTheme === "light" ? (
-              <img className="w-full" src={downhero} alt="" />
+              <img loading="lazy" className="w-full" src={downhero} alt="" />
             ) : (
-              <img className="w-full" src={downheroDark} alt="" />
+              <img loading="lazy" className="w-full" src={downheroDark} alt="" />
             )}
           </div>
         </div>
 
         <div className="w-full md:w-[70rem] relative hidden lg:block 2xl:-right-[9.99rem] xl:-top-16 z-0 -right-0 -top-5">
           {currentTheme === "light" ? (
-            <img className="w-full" src={hero} alt="hero img" />
+            <img loading="lazy" className="w-full" src={hero} alt="hero img" />
           ) : (
-            <img className="w-full" src={heroDark} alt="hero img" />
+            <img loading="lazy" className="w-full" src={heroDark} alt="hero img" />
           )}
         </div>
       </div>
